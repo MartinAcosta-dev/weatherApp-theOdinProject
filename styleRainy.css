@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('rainny.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#contenedor{
+    width: 100%;
+    height: 61em;
+    background-color: rgba(149, 149, 149, 0.402);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainCard{
+    height: 700px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgba(49, 49, 49, 0.664);
+    padding: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+   
+}
+
+#mainCard h1{
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 47px;
+    width: 100%;
+    text-align: center;
+}
+
+#mainCard form{
+    width: 60%;
+    text-align: center;
+}
+
+#mainCard form input{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#btnQuery{
+    margin-top: 20px;
+    padding: 20px;
+    width: 200px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+}
+
+#btnQuery:hover{
+    cursor: pointer;
+    background-color: rgb(228, 255, 152);
+}
+
+#result{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 35px;
+}
+
+#tempCard{
+    height: 100%;
+    width: 80%;
+    
+
+    text-align: center;
+}
+
+#temp{
+    font-size: 50px;
+}
+
+#sensacionTermica{
+    font-size: 35px;
+}
+
+#min, #max{
+    font-size: 19px;
+}
