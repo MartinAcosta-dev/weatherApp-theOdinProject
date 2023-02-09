@@ -1,3 +1,7 @@
+function setTwoDecimals(num){
+    return (Math.round(num * 100) / 100).toFixed(2)
+}
+
 function mostrarClima(clima){
 
     $("#result").text("");
@@ -5,10 +9,10 @@ function mostrarClima(clima){
     let newWeather = `
     <div id="tempCard">
         <div>${clima.cityName}</div>
-        <div id="temp">${clima.temp}º</div>
-        <div id="sensacionTermica">${clima.sensacionTermica}º</div>
-        <div id="min">${clima.min}º</div>
-        <div id="max">${clima.max}º</div>
+        <div id="temp">${setTwoDecimals(clima.temp)}º</div>
+        <div id="sensacionTermica">${setTwoDecimals(clima.sensacionTermica)}º</div>
+        <div id="min">${setTwoDecimals(clima.min)}º</div>
+        <div id="max">${setTwoDecimals(clima.max)}º</div>
         <div id="desc">${clima.desc}</div>
     </div>
     `;
