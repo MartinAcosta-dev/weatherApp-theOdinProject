@@ -102,3 +102,44 @@ body{
 #min, #max{
     font-size: 19px;
 }
+
+@media only screen and (max-width: 500px) {
+    body{
+        background: url("rainyMobile.jpg.jpg")!important;
+    }
+
+    #mainCard{
+        height: 700px;
+        width: 90%;
+        border-radius: 10px;
+        background-color: rgba(49, 49, 49, 0.664);
+        padding: 45px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 30px;
+       
+    }
+
+    #mainCard h1{
+        font-size: 40px;
+    }
+
+    #mainCard form{
+        width: 100% !important;
+    }
+
+    #mainCard #result{
+        width: 100%;
+    }
+
+    #tempCard{
+        height: 100%;
+        width: 100%;
+        
+    
+        text-align: center;
+    }
+}

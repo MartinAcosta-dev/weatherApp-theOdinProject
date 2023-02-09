@@ -10,9 +10,9 @@ function mostrarClima(clima){
     <div id="tempCard">
         <div>${clima.cityName}</div>
         <div id="temp">${setTwoDecimals(clima.temp)}º</div>
-        <div id="sensacionTermica">${setTwoDecimals(clima.sensacionTermica)}º</div>
-        <div id="min">${setTwoDecimals(clima.min)}º</div>
-        <div id="max">${setTwoDecimals(clima.max)}º</div>
+        <div id="sensacionTermica">Sens. térmica ${setTwoDecimals(clima.sensacionTermica)}º</div>
+        <div id="min">Min. ${setTwoDecimals(clima.min)}º</div>
+        <div id="max">Max. ${setTwoDecimals(clima.max)}º</div>
         <div id="desc">${clima.desc}</div>
     </div>
     `;
