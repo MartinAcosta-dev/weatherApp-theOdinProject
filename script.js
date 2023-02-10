@@ -5,8 +5,13 @@ let spinner = $("#result .spinner-border");
 let botonConsultar = $("#btnQuery");
 
 botonConsultar.click(function(){
-    spinner.show();
     let cityName = $("form input").val();
-    cityName.replace(" ","%20");
-    getData(cityName, apiKey);
+    
+    if(cityName == ""){
+        alert("Introduzca el nombre de una ciudad")
+    }else{
+        cityName.replace(" ","%20");
+        getData(cityName, apiKey);
+    }
+    
 });

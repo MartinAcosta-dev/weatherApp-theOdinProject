@@ -9,7 +9,7 @@
 body{
     background: url('sunny.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 #contenedor{
@@ -26,13 +26,14 @@ body{
     width: 50%;
     border-radius: 10px;
     background-color: rgba(49, 49, 49, 0.664);
-    padding: 45px;
+    padding-top: 30px;
 
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 30px;
+    gap: 90px;
+    flex-wrap: wrap;
    
 }
 
@@ -84,10 +85,9 @@ body{
 }
 
 #tempCard{
-    height: 100%;
-    width: 80%;
     
-
+    width: 100%;
+    
     text-align: center;
 }
 
@@ -101,6 +101,33 @@ body{
 
 #min, #max{
     font-size: 19px;
+}
+
+@media screen and (max-width: 781px) {
+
+    #result{
+        margin-top: -20px !important;
+    }
+
+    #mainCard #cityName{
+        font-size: 21px !important;
+    }
+
+    #temp{
+        font-size: 21px !important;
+    }
+
+    #sensacionTermica{
+        font-size: 21px !important;
+    }
+
+    #desc{
+        font-size: 21px !important;
+    }
+
+    #btnQuery{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -129,6 +156,10 @@ body{
 
     #mainCard form{
         width: 100% !important;
+    }
+
+    #mainCard input{
+        font-size: 15px !important;
     }
 
     #mainCard #result{

@@ -9,7 +9,7 @@
 body{
     background: url('rainny.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 #contenedor{
