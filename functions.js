@@ -2,7 +2,20 @@ function setTwoDecimals(num){
     return (Math.round(num * 100) / 100).toFixed(2)
 }
 
-function corregir(){
+function convertCelciusToFahrenheit(temperatura){
+    let resultado = (temperatura * 1.8 ) + 32;
+
+    return resultado
+}
+
+function convertFahrenheitToCelcius(temperatura){
+    let resultado = (5/9) * (temperatura - 32 );
+
+    return resultado
+}
+
+
+function corregirTemperaturaVacia(){
     if ($("#temp").text() == "NaNº"){
         $("#tempCard").hide();
     }
@@ -22,12 +35,18 @@ function mostrarClima(clima){
             <div id="min">Min. ${setTwoDecimals(clima.min)}º</div>
             <div id="max">Max. ${setTwoDecimals(clima.max)}º</div>
             <div id="desc">${clima.desc}</div>
+            <div> 
+                <select id="selectTemps">
+                    <option>Celcius</option>
+                    <option>Fahrenheit</option>
+                </select>
+            </div>
         </div>
         `;
 
         $("#result").append(newWeather);
 
-        corregir();
+        corregirTemperaturaVacia();
     }
 }
 
@@ -55,6 +74,8 @@ async function getData( cityName, apiKey){
         clima.min = resJson.main.temp_min;
         clima.max = resJson.main.temp_max;
         clima.desc = "Description: "+resJson.weather[0].main;
+
+        console.log(resJson);
     
     }catch(error){
         console.log("ERROR!: "+error)
