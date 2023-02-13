@@ -30,10 +30,10 @@ function mostrarClima(clima){
         let newWeather = `
         <div id="tempCard">
             <div id="cityName" >${clima.cityName}</div>
-            <div id="temp">${setTwoDecimals(clima.temp)}º</div>
-            <div id="sensacionTermica">Sens. térmica ${setTwoDecimals(clima.sensacionTermica)}º</div>
-            <div id="min">Min. ${setTwoDecimals(clima.min)}º</div>
-            <div id="max">Max. ${setTwoDecimals(clima.max)}º</div>
+            <div id="temp">${setTwoDecimals(clima.temp)}ºC</div>
+            <div id="sensacionTermica">Sens. térmica ${setTwoDecimals(clima.sensacionTermica)}ºC</div>
+            <div id="min">Min. ${setTwoDecimals(clima.min)}ºC</div>
+            <div id="max">Max. ${setTwoDecimals(clima.max)}ºC</div>
             <div id="desc">${clima.desc}</div>
             <div> 
                 <select id="selectTemps">
