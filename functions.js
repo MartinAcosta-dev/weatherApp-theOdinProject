@@ -14,13 +14,6 @@ function convertFahrenheitToCelcius(temperatura){
     return resultado
 }
 
-
-function corregirTemperaturaVacia(){
-    if ($("#temp").text() == "NaNº"){
-        $("#tempCard").hide();
-    }
-}
-
 function mostrarClima(clima){
     if(clima.cityName == undefined){
         console.log("Indefinido")
@@ -46,7 +39,6 @@ function mostrarClima(clima){
 
         $("#result").append(newWeather);
 
-        corregirTemperaturaVacia();
     }
 }
 
@@ -76,13 +68,15 @@ async function getData( cityName, apiKey){
         clima.desc = "Description: "+resJson.weather[0].main;
 
         console.log(resJson);
+
+        $("#result .spinner-border").hide();
+
+        mostrarClima(clima);
+        cambiarEstilo();
     
     }catch(error){
         console.log("ERROR!: "+error)
     }
     
-    $("#result .spinner-border").hide();
-
-    mostrarClima(clima);
-    cambiarEstilo();
+    
 }

@@ -146,13 +146,21 @@ body{
         background: url("sunnyMobile.jpg")!important;
     }
 
+     
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
     #mainCard{
      
         width: 90%;
         border-radius: 10px;
         background-color: rgba(49, 49, 49, 0.664);
         padding: 45px;
-    
+        margin-top: 50px !important;
+
         display: flex;
         flex-direction: column;
         justify-content: start;

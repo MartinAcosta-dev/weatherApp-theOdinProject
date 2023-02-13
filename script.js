@@ -24,10 +24,10 @@ botonConsultar.click(function(){
 $("#mainCard").on("change","#selectTemps",function(){
     optionSelected = $(this).val();
     if(optionSelected == "Fahrenheit"){
-        let celciusTemp = $("#temp").text();
-        let celciusSensT = $("#sensacionTermica").text();
-        let celciusMin = $("#min").text();
-        let celciusMax = $("#max").text();
+        let celciusTemp = $("#temp").text();                //Temperatura en celcius
+        let celciusSensT = $("#sensacionTermica").text();   //Sensacion termica en celcius
+        let celciusMin = $("#min").text();                  //Minima en celcius
+        let celciusMax = $("#max").text();                  //Maxima en celcius
         
         let faTemp = setTwoDecimals(convertCelciusToFahrenheit(parseFloat(celciusTemp.replace("ºC",""))));
         let faSens = setTwoDecimals(convertCelciusToFahrenheit(parseFloat(celciusSensT.replace("Sens. térmica ","").replace("ºC",""))));
@@ -41,10 +41,10 @@ $("#mainCard").on("change","#selectTemps",function(){
         $("#max").text("Max. "+faMax+"ºF");
     }else if(optionSelected == "Celcius"){
 
-        let farTemp = $("#temp").text();
-        let farSensT = $("#sensacionTermica").text();
-        let farMin = $("#min").text();
-        let farMax = $("#max").text();
+        let farTemp = $("#temp").text();                    //Temperatura en Fahrenheit
+        let farSensT = $("#sensacionTermica").text();       //Sensacion termica en Fahrenheit
+        let farMin = $("#min").text();                      //Minima en Fahrenheit
+        let farMax = $("#max").text();                      //Maxima en Fahrenheit
         
         let celTemp = setTwoDecimals(convertFahrenheitToCelcius(parseFloat(farTemp.replace("ºF",""))));
         let celSens = setTwoDecimals(convertFahrenheitToCelcius(parseFloat(farSensT.replace("Sens. térmica ","").replace("ºF",""))));
