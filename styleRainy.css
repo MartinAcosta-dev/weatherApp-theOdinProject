@@ -129,13 +129,9 @@ body{
         flex-direction: column;
         justify-content: start;
         align-items: center;
+        gap: 20px;
         
        
-    }
-
-    #cityName{
-        font-size: 30px !important;
-        color: red !important;
     }
 
 
@@ -148,10 +144,14 @@ body{
     }
 
     #tempCard{
-        
-        width: 100%;
-        
-    
         text-align: center;
+    }
+
+    #tempCard div{
+        font-size: 0.7em !important;
+    }
+
+    #tempCard #cityName{
+        font-size: 1em !important;
     }
 }
