@@ -147,7 +147,7 @@ body{
     }
 
     #mainCard{
-        height: 700px;
+     
         width: 90%;
         border-radius: 10px;
         background-color: rgba(49, 49, 49, 0.664);
@@ -157,20 +157,14 @@ body{
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
+        
        
     }
 
-    #mainCard h1{
-        font-size: 40px;
-    }
 
     #mainCard form{
         width: 100% !important;
-    }
-
-    #mainCard input{
-        font-size: 15px !important;
     }
 
     #mainCard #result{
@@ -178,12 +172,14 @@ body{
     }
 
     #tempCard{
-        height: 100%;
-        width: 100%;
-        
-    
         text-align: center;
     }
+
+    #tempCard div{
+        font-size: 0.7em !important;
+    }
+
+    #tempCard #cityName{
+        font-size: 1em !important;
+    }
 }
-
-

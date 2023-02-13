@@ -129,13 +129,15 @@ body{
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        gap: 30px;
+        
        
     }
 
-    #mainCard h1{
-        font-size: 40px;
+    #cityName{
+        font-size: 30px !important;
+        color: red !important;
     }
+
 
     #mainCard form{
         width: 100% !important;
